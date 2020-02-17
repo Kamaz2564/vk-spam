@@ -113,6 +113,9 @@ if task == "1":
 		except:
 			print("\033[31m[!] Invalid Token\033[0m")
 			quit()
+		else:
+			print("\033[31m[!] Ошибка! \033[0m")
+			quit()
 	elif task == "2":
 		params = getlink()
 		mess = input("\033[33m[#] Введите текст:\033[0m ")
