@@ -99,7 +99,7 @@ if task == "1":
 			print("\033[32m[√] Вы успешно авторизовались \033[0m")
 			params = getlink()
 			mess = input("\033[33m[#] Введите текст:\033[0m ")
-			while i < 10:
+			while True:
 				time.sleep(0.9)
 				rand = random.randint(0, 64)
 				api.messages.send(user_id=params[1], message=mess, random_id=rand)
